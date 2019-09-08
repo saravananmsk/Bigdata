@@ -1,0 +1,3 @@
+hadoop fs -put /opt/data/hadooptest.txt /opt/data/test
+hadoop fs -ls /opt/data/test
+hadoop fs -cat /opt/data/test/hadooptest.txt
