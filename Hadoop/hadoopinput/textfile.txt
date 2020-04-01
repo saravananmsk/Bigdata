@@ -1,0 +1,2 @@
+This is the test text file to test hadoop file copy.
+hadoop can store high volume of data.

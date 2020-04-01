@@ -3,5 +3,4 @@ hadoop fs -ls /opt/data/test --to list the files in hadoop
 hadoop fs -cat /opt/data/test/hadooptest.txt -- to print the data in the file in hadoop
 hadoop fs -put /opt/data/hadooptest.txt /opt/data/test --to copy from local to hadoop
 hadoop fs -copyFromLocal copyfromlocalcommand.txt test01042020/ -- to copy from local to hadoop
-hadoop fs -get test01042020/textfile.txt hadoopinput/ -- to copy file hadoop to local
-hadoop fs -copyToLocal test01042020/copyfromlocalcommand.txt hadoopinput/ --to copy file from hadoop to local
+hadoop fs -get test01042020/textfile.txt hadoopinput/
