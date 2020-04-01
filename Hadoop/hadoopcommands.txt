@@ -16,3 +16,12 @@ hadoop fs -chown test test01042020/copyfromlocalcommand.txt -- to change the cho
 hadoop fs -du -h test01042020/copyfromlocalcommand.txt --to know file size
 hadoop fs -df -h test01042020/copyfromlocalcommand.txt --to know disk usage
 hadoop fsck test01042020/copyfromlocalcommand.txt -- to check health of the file
+hadoop fs  -touchz test01042020/touchzfile.txt  -- to create empty file
+hadoop fs -stat %u test01042020 -- to stats of the directory
+hadoop fs -test -d test01042020 -- test command to test whether its directory or file
+hadoop fs -help touchz -- help command in hadoop
+hadoop fs -appendToFile appendfile1.txt appendfile2.txt test01042020/textfile.txt -- to append file in hadoop
+hadoop fs checksum test01042020/textfile.txt -- checksum in hadoop
+hadoop fs -find test01042020 -name textfile.txt -print -- find command in hadoop
+hadoop fs -getmerge test01042020 hadoopinput/testmerge.txt -- merge files in specific directory to local
+hadoop fs -count test01042020/ -- count of files or directory in specific directory
