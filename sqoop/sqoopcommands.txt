@@ -1,0 +1,56 @@
+-- to import data into hdfs from mysql
+
+sqoop import --connect jdbc:mysql://cxln2.c.thelab-240901.internal/sqoopex --table msk_testtable1 --username sqoopuser --P --target-dir test01042020/sqoop/testtable1123
+
+-- to import data into hdfs from mysql using where clause
+
+sqoop import --connect jdbc:mysql://cxln2.c.thelab-240901.internal/sqoopex --table msk_testtable1 --username sqoopuser --P --target-dir test01042020/sqoop/wheretesttable1 --where "sno='1'"
+
+-- to import data into hdfs from mysql using password file
+
+sqoop import --connect jdbc:mysql://cxln2.c.thelab-240901.internal/sqoopex --table msk_testtable1 --username sqoopuser --target-dir test01042020/sqoop/testtablep1 --password-file test01042020/sqoop/mysqlpass
+
+--to import data into hdfs from mysql as sequence file
+
+sqoop import --connect jdbc:mysql://cxln2.c.thelab-240901.internal/sqoopex --table msk_testtable1 --username sqoopuser --P --target-dir test01042020/sqoop/testtablesq1 --as-sequencefile
+
+--to import data into hdfs from mysql as sequence file
+
+sqoop import --connect jdbc:mysql://cxln2.c.thelab-240901.internal/sqoopex --table msk_testtable1 --username sqoopuser --P --target-dir test01042020/sqoop/testtableavrofile --as-avrodatafile;
+
+--to import data into hdfs from mysql as avrodatafile
+
+sqoop import -Dmapreduce.job.user.classpath.first=true --connect jdbc:mysql://cxln2.c.thelab-240901.internal/sqoopex --table msk_testtable1 --username sqoopuser --P --target-dir test01042020/sqoop/avrodatafile3 --as-avrodatafile
+
+--to import data into hdfs from mysql as parquetfile
+
+sqoop import -Dmapreduce.job.user.classpath.first=true --connect jdbc:mysql://cxln2.c.thelab-240901.internal/sqoopex --table msk_testtable1 --username sqoopuser --P --target-dir test01042020/sqoop/parquetfile1 --as-parquetfile
+
+
+
+--to import data into hdfs from mysql as avrodatafile compress
+
+sqoop import -Dmapreduce.job.user.classpath.first=true --connect jdbc:mysql://cxln2.c.thelab-240901.internal/sqoopex --table msk_testtable1 --username sqoopuser --P --target-dir test01042020/sqoop/avrodatafile4 --as-avrodatafile --compress --compression-codec org.apache.hadoop.io.compress.BZip2Codec
+
+
+
+
+--to speed the process only for text file
+
+sqoop import --connect jdbc:mysql://cxln2.c.thelab-240901.internal/sqoopex --table msk_testtable1 --username sqoopuser --P --target-dir test01042020/sqoop/testtable56 --direct
+
+--list of databases
+
+sqoop list-databases --connect jdbc:mysql://cxln2.c.thelab-240901.internal --username sqoopuser --P
+
+--list of tables
+sqoop list-tables --connect jdbc:mysql://cxln2.c.thelab-240901.internal/sqoopex --username sqoopuser --P
+
+---hive import from sqoop
+
+sqoop import --connect jdbc:mysql://cxln2.c.thelab-240901.internal/sqoopex --table msk_testtable1 --username sqoopuser --P --hive-import --hive-table msk_test1.msk_testtable1
+
+--target-dir test01042020/sqoop/testtable1
+
+
+

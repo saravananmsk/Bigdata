@@ -1,0 +1,2 @@
+to test copyfrom local command
+hadoop command:wq

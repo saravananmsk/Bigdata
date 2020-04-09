@@ -1,0 +1,131 @@
+20/04/05 17:25:48 INFO pig.ExecTypeProvider: Trying ExecType : LOCAL
+20/04/05 17:25:48 INFO pig.ExecTypeProvider: Trying ExecType : MAPREDUCE
+20/04/05 17:25:48 INFO pig.ExecTypeProvider: Trying ExecType : TEZ_LOCAL
+20/04/05 17:25:48 INFO pig.ExecTypeProvider: Trying ExecType : TEZ
+20/04/05 17:25:48 INFO pig.ExecTypeProvider: Picked TEZ as the ExecType
+2020-04-05 17:25:48,097 [main] INFO  org.apache.pig.Main - Apache Pig version 0.16.0.2.6.2.0-205 (rUnversioned directory) compiled Aug 26 2017, 09:34:39
+2020-04-05 17:25:48,097 [main] INFO  org.apache.pig.Main - Logging error messages to: /home/saravananmsk1536/ms/git/Bigdata/Unix_scripts/pig_1586107548096.log
+2020-04-05 17:25:48,803 [main] INFO  org.apache.pig.impl.util.Utils - Default bootup file /home/saravananmsk1536/.pigbootup not found
+2020-04-05 17:25:48,962 [main] INFO  org.apache.pig.backend.hadoop.executionengine.HExecutionEngine - Connecting to hadoop file system at: hdfs://cxln1.c.thelab-240901.internal:8020
+2020-04-05 17:25:49,532 [main] INFO  org.apache.pig.PigServer - Pig Script ID for the session: PIG-testpigscript.pig-108ed853-f441-40c7-bbb3-bf9089596ad8
+2020-04-05 17:25:49,938 [main] INFO  org.apache.hadoop.yarn.client.api.impl.TimelineClientImpl - Timeline service address: http://cxln2.c.thelab-240901.internal:8188/ws/v1/timeline/
+2020-04-05 17:25:50,051 [main] INFO  org.apache.pig.backend.hadoop.PigATSClient - Created ATS Hook
+2020-04-05 17:25:50,823 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig features used in the script: UNKNOWN
+2020-04-05 17:25:50,886 [main] INFO  org.apache.pig.data.SchemaTupleBackend - Key [pig.schematuple] was not set... will not generate code.
+2020-04-05 17:25:50,943 [main] INFO  org.apache.pig.newplan.logical.optimizer.LogicalPlanOptimizer - {RULES_ENABLED=[AddForEach, ColumnMapKeyPrune, ConstantCalculator, GroupByConstParallelSetter, LimitOptimizer, LoadTypeCastInserter, MergeFilter, MergeForEach, PartitionFilterOptimizer, PredicatePushdownOptimizer, PushDownForEachFlatten, PushUpFilter, SplitFilter, StreamTypeCastInserter]}
+2020-04-05 17:25:50,981 [main] INFO  org.apache.pig.newplan.logical.rules.ColumnPruneVisitor - Columns pruned for A: $2
+2020-04-05 17:25:51,054 [main] INFO  org.apache.pig.impl.util.SpillableMemoryManager - Selected heap (PS Old Gen) of size 699400192 to monitor. collectionUsageThreshold = 489580128, usageThreshold = 489580128
+2020-04-05 17:25:51,202 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezLauncher - Tez staging directory is /tmp/saravananmsk1536/staging and resources directory is /tmp/temp-707075797
+2020-04-05 17:25:51,264 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.plan.TezCompiler - File concatenation threshold: 100 optimistic? false
+2020-04-05 17:25:51,425 [main] INFO  org.apache.pig.builtin.PigStorage - Using PigTextInputFormat
+2020-04-05 17:25:51,431 [main] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+2020-04-05 17:25:51,431 [main] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+2020-04-05 17:25:51,492 [main] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 1
+2020-04-05 17:25:51,968 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezJobCompiler - Local resource: joda-time-2.9.4.jar
+2020-04-05 17:25:51,968 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezJobCompiler - Local resource: antlr-runtime-3.4.jar
+2020-04-05 17:25:51,968 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezJobCompiler - Local resource: automaton-1.11-8.jar
+2020-04-05 17:25:51,968 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezJobCompiler - Local resource: pig-0.16.0.2.6.2.0-205-core-h2.jar
+2020-04-05 17:25:52,259 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder - For vertex - scope-12: parallelism=1, memory=3072, java opts=-XX:+PrintGCDetails -verbose:gc -XX:+PrintGCTimeStamps -XX:+UseNUMA -XX:+UseG1GC -XX:+ResizeTLAB
+2020-04-05 17:25:52,259 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder - Processing aliases: A,B
+2020-04-05 17:25:52,259 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder - Detailed locations: A[1,4],B[-1,-1]
+2020-04-05 17:25:52,259 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder - Pig features in the vertex: 
+2020-04-05 17:25:52,351 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezJobCompiler - Total estimated parallelism is 1
+2020-04-05 17:25:52,443 [PigTezLauncher-0] INFO  org.apache.pig.tools.pigstats.tez.TezScriptState - Pig script settings are added to the job
+2020-04-05 17:25:52,552 [PigTezLauncher-0] INFO  org.apache.tez.client.TezClient - Tez Client Version: [ component=tez-api, version=0.7.0.2.6.2.0-205, revision=07380b58a1bea46da5760e1007adef8fbb7cad6e, SCM-URL=scm:git:https://git-wip-us.apache.org/repos/asf/tez.git, buildTime=2017-08-26T08:19:10Z ]
+2020-04-05 17:25:52,596 [PigTezLauncher-0] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at cxln2.c.thelab-240901.internal/10.142.1.2:8050
+2020-04-05 17:25:52,716 [PigTezLauncher-0] INFO  org.apache.hadoop.yarn.client.AHSProxy - Connecting to Application History server at cxln2.c.thelab-240901.internal/10.142.1.2:10200
+2020-04-05 17:25:52,720 [PigTezLauncher-0] INFO  org.apache.tez.client.TezClient - Session mode. Starting session.
+2020-04-05 17:25:52,724 [PigTezLauncher-0] INFO  org.apache.tez.client.TezClientUtils - Using tez.lib.uris value from configuration: /hdp/apps/2.6.2.0-205/tez/tez.tar.gz
+2020-04-05 17:25:52,781 [PigTezLauncher-0] INFO  org.apache.tez.client.TezClient - Tez system stage directory hdfs://cxln1.c.thelab-240901.internal:8020/tmp/saravananmsk1536/staging/.tez/application_1585656265039_10732 doesn't exist and is created
+2020-04-05 17:25:52,928 [PigTezLauncher-0] INFO  org.apache.hadoop.yarn.client.api.impl.YarnClientImpl - Submitted application application_1585656265039_10732
+2020-04-05 17:25:52,931 [PigTezLauncher-0] INFO  org.apache.tez.client.TezClient - The url to track the Tez Session: http://cxln2.c.thelab-240901.internal:8088/proxy/application_1585656265039_10732/
+2020-04-05 17:25:59,139 [PigTezLauncher-0] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezJob - Submitting DAG PigLatin:testpigscript.pig-0_scope-0
+2020-04-05 17:25:59,139 [PigTezLauncher-0] INFO  org.apache.tez.client.TezClient - Submitting dag to TezSession, sessionName=PigLatin:testpigscript.pig, applicationId=application_1585656265039_10732, dagName=PigLatin:testpigscript.pig-0_scope-0, callerContext={ context=PIG, callerType=PIG_SCRIPT_ID, callerId=PIG-testpigscript.pig-108ed853-f441-40c7-bbb3-bf9089596ad8 }
+2020-04-05 17:25:59,811 [PigTezLauncher-0] INFO  org.apache.tez.client.TezClient - Submitted dag to TezSession, sessionName=PigLatin:testpigscript.pig, applicationId=application_1585656265039_10732, dagName=PigLatin:testpigscript.pig-0_scope-0
+2020-04-05 17:25:59,882 [PigTezLauncher-0] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at cxln2.c.thelab-240901.internal/10.142.1.2:8050
+2020-04-05 17:25:59,883 [PigTezLauncher-0] INFO  org.apache.hadoop.yarn.client.AHSProxy - Connecting to Application History server at cxln2.c.thelab-240901.internal/10.142.1.2:10200
+2020-04-05 17:25:59,885 [PigTezLauncher-0] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezJob - Submitted DAG PigLatin:testpigscript.pig-0_scope-0. Application id: application_1585656265039_10732
+2020-04-05 17:26:00,402 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezLauncher - HadoopJobId: job_1585656265039_10732
+2020-04-05 17:26:00,886 [Timer-0] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezJob - DAG Status: status=RUNNING, progress=TotalTasks: 1 Succeeded: 0 Running: 0 Failed: 0 Killed: 0, diagnostics=, counters=null
+2020-04-05 17:26:05,008 [PigTezLauncher-0] INFO  org.apache.tez.common.counters.Limits - Counter limits initialized with parameters:  GROUP_NAME_MAX=256, MAX_GROUPS=3000, COUNTER_NAME_MAX=64, MAX_COUNTERS=10000
+2020-04-05 17:26:05,012 [PigTezLauncher-0] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezJob - DAG Status: status=SUCCEEDED, progress=TotalTasks: 1 Succeeded: 1 Running: 0 Failed: 0 Killed: 0, diagnostics=, counters=Counters: 25
+	org.apache.tez.common.counters.DAGCounter
+		NUM_SUCCEEDED_TASKS=1
+		TOTAL_LAUNCHED_TASKS=1
+		RACK_LOCAL_TASKS=1
+		AM_CPU_MILLISECONDS=2220
+		AM_GC_TIME_MILLIS=26
+	File System Counters
+		HDFS_BYTES_READ=82
+		HDFS_BYTES_WRITTEN=85
+		HDFS_READ_OPS=4
+		HDFS_WRITE_OPS=2
+		HDFS_OP_CREATE=1
+		HDFS_OP_GET_FILE_STATUS=3
+		HDFS_OP_OPEN=1
+		HDFS_OP_RENAME=1
+	org.apache.tez.common.counters.TaskCounter
+		GC_TIME_MILLIS=30
+		CPU_MILLISECONDS=3770
+		PHYSICAL_MEMORY_BYTES=526385152
+		VIRTUAL_MEMORY_BYTES=4517691392
+		COMMITTED_HEAP_BYTES=526385152
+		INPUT_RECORDS_PROCESSED=3
+		INPUT_SPLIT_LENGTH_BYTES=82
+		OUTPUT_RECORDS=3
+	MultiStoreCounters
+		Output records in _0_tmp-638368321=3
+	TaskCounter_scope_12_INPUT_scope_0
+		INPUT_RECORDS_PROCESSED=3
+		INPUT_SPLIT_LENGTH_BYTES=82
+	TaskCounter_scope_12_OUTPUT_scope_11
+		OUTPUT_RECORDS=3
+2020-04-05 17:26:05,412 [main] INFO  org.apache.pig.tools.pigstats.tez.TezPigScriptStats - Script Statistics:
+
+       HadoopVersion: 2.7.3.2.6.2.0-205                                                                                   
+          PigVersion: 0.16.0.2.6.2.0-205                                                                                  
+          TezVersion: 0.7.0.2.6.2.0-205                                                                                   
+              UserId: saravananmsk1536                                                                                    
+            FileName: testpigscript.pig                                                                                   
+           StartedAt: 2020-04-05 17:25:51                                                                                 
+          FinishedAt: 2020-04-05 17:26:05                                                                                 
+            Features: UNKNOWN                                                                                             
+
+Success!
+
+
+DAG 0:
+                                    Name: PigLatin:testpigscript.pig-0_scope-0                                                                
+                           ApplicationId: job_1585656265039_10732                                                                             
+                      TotalLaunchedTasks: 1                                                                                                   
+                           FileBytesRead: 0                                                                                                   
+                        FileBytesWritten: 0                                                                                                   
+                           HdfsBytesRead: 82                                                                                                  
+                        HdfsBytesWritten: 85                                                                                                  
+      SpillableMemoryManager spill count: 0                                                                                                   
+                Bags proactively spilled: 0                                                                                                   
+             Records proactively spilled: 0                                                                                                   
+
+DAG Plan:
+Tez vertex scope-12
+
+Vertex Stats:
+VertexId Parallelism TotalTasks   InputRecords   ReduceInputRecords  OutputRecords  FileBytesRead FileBytesWritten  HdfsBytesRead HdfsBytesWritten Alias	Feature	Outputs
+scope-12           1          1              3                    0              3              0                0             82               85 A,B		hdfs://cxln1.c.thelab-240901.internal:8020/tmp/temp-2040947816/tmp-638368321,
+
+Input(s):
+Successfully read 3 records (82 bytes) from: "hdfs://cxln1.c.thelab-240901.internal:8020/user/saravananmsk1536/test01042020/pig/pigtest.txt"
+
+Output(s):
+Successfully stored 3 records (85 bytes) in: "hdfs://cxln1.c.thelab-240901.internal:8020/tmp/temp-2040947816/tmp-638368321"
+
+2020-04-05 17:26:05,434 [main] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+2020-04-05 17:26:05,434 [main] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+(test1,1234567,IT)
+(test2,4567776,IT23)
+(test3,6788878,IT56)
+2020-04-05 17:26:05,564 [main] INFO  org.apache.pig.Main - Pig script completed in 17 seconds and 659 milliseconds (17659 ms)
+2020-04-05 17:26:05,570 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezLauncher - Shutting down thread pool
+2020-04-05 17:26:05,582 [pool-1-thread-1] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezSessionManager - Shutting down Tez session org.apache.tez.client.TezClient@459d9101
+2020-04-05 17:26:05 Shutting down Tez session , sessionName=PigLatin:testpigscript.pig, applicationId=application_1585656265039_10732
+2020-04-05 17:26:05,582 [pool-1-thread-1] INFO  org.apache.tez.client.TezClient - Shutting down Tez Session, sessionName=PigLatin:testpigscript.pig, applicationId=application_1585656265039_10732

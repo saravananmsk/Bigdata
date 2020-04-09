@@ -1,0 +1,19 @@
+{
+  "type" : "record",
+  "name" : "msk_testtable1",
+  "doc" : "Sqoop import of msk_testtable1",
+  "fields" : [ {
+    "name" : "sno",
+    "type" : [ "null", "int" ],
+    "default" : null,
+    "columnName" : "sno",
+    "sqlType" : "4"
+  }, {
+    "name" : "name",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "name",
+    "sqlType" : "1"
+  } ],
+  "tableName" : "msk_testtable1"
+}

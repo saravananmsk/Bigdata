@@ -1,0 +1,7 @@
+to test copyfrom local command
+hadoop command:wq
+This is the test text file to test hadoop file copy.
+hadoop can store high volume of data.
+append file 1 
+thisis to test append file1
+this is append file2
