@@ -1,0 +1,5 @@
+1201 Gopal 45000 TechnicalManager TP
+1202 Manisha 45000 ProofReader PR
+1203 Masthanvali 40000 TechnicalWriter TP
+1204 Krian 40000 HrAdmin HR
+1205 Kranthi 30000 OpAdmin Admin`
