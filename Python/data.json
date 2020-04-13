@@ -1,0 +1,12 @@
+{
+"emp_details":[
+{
+"emp_name":"test1",
+"email_id":"test1@gmail.com"
+},
+{
+"emp_name":"test2",
+"email_id":"test2@gmail.com"
+}
+]
+}
