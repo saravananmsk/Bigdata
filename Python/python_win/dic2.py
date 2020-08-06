@@ -1,0 +1,12 @@
+dic2={"msk":25,"t2":35,"t3":55}
+print(dic2)
+print(dic2["msk"])
+dic3={"msk":{"Department":"Sales","Salary":2000,"Age":25},
+"t1":{"Department":"Maketing","Salary":3000,"Age":35},
+"t2":{"Department":"Finance","Salary":4000,"Age":45}
+      }
+print(dic3)
+print(dic3.keys())
+print(dic3.values())
+print(list(dic3.values()))
+#print(dic3["msk"].list[0])
