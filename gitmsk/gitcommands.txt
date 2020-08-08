@@ -16,3 +16,26 @@ git checkout childbranch2
 git pull
 git merge childbranch1
 git push
+
+to merge file with master
+
+git checkout test1 --> test1 child
+git pull origin test1
+git checkout master
+git merge test1
+git push origin master
+
+
+git add commit push
+git checkout branchname
+
+go to the file path
+
+git add .
+
+git status
+
+git commit -a -m " add the relevant comments"
+
+git push --set-upstream origin test1     --> ( to push the files to main repository in  respective branch)
+
