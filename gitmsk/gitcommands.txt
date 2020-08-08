@@ -1,0 +1,18 @@
+master and child branch refresh
+
+git checkout master
+git pull
+git checkout childbranch
+git pull
+git merge master
+git push
+
+child and its child branch refresh
+
+child's child branch
+ git checkout childbranch1
+git pull
+git checkout childbranch2
+git pull
+git merge childbranch1
+git push
