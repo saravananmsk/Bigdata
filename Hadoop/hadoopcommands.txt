@@ -25,3 +25,9 @@ hadoop fs checksum test01042020/textfile.txt -- checksum in hadoop
 hadoop fs -find test01042020 -name textfile.txt -print -- find command in hadoop
 hadoop fs -getmerge test01042020 hadoopinput/testmerge.txt -- merge files in specific directory to local
 hadoop fs -count test01042020/ -- count of files or directory in specific directory
+
+hdfs dfs -mkdir  mysql/import
+hdfs dfs -ls mskhp/
+hdfs dfs -cat mskhp/mskhadoop.txt
+hdfs dfs -ls  mskhp/test123/part-m-*
+hdfs dfs -cat mskhp/test123/part-m-*
