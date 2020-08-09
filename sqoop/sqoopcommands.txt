@@ -53,4 +53,4 @@ sqoop import --connect jdbc:mysql://cxln2.c.thelab-240901.internal/sqoopex --tab
 --target-dir test01042020/sqoop/testtable1
 
 
-
+sqoop list-tables --connect jdbc:mysql://localhost/data --username root --password ubuntu
