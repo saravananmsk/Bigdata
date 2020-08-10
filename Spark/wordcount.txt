@@ -1,2 +1,0 @@
-this spark python word count program
-this is test program
