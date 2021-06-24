@@ -24,7 +24,7 @@ sqoop import -Dmapreduce.job.user.classpath.first=true --connect jdbc:mysql://cx
 
 --to import data into hdfs from mysql as parquetfile
 
-sqoop import -Dmapreduce.job.user.classpath.first=true --connect jdbc:mysql://cxln2.c.thelab-240901.internal/sqoopex --table msk_testtable1 --username sqoopuser --P --target-dir test01042020/sqoop/parquetfile1 --as-parquetfile
+sqoop import -Dmapreduce.job.user.classpath.first=true --connect jdbc:mysql://cxln2.c.thelab-240901.internal/sqoopex --table msk_testtable1 --username sqoopuser --P --target-dir test02042021/sqoop/parquetfile1 --as-parquetfile
 
 
 
@@ -33,6 +33,9 @@ sqoop import -Dmapreduce.job.user.classpath.first=true --connect jdbc:mysql://cx
 sqoop import -Dmapreduce.job.user.classpath.first=true --connect jdbc:mysql://cxln2.c.thelab-240901.internal/sqoopex --table msk_testtable1 --username sqoopuser --P --target-dir test01042020/sqoop/avrodatafile4 --as-avrodatafile --compress --compression-codec org.apache.hadoop.io.compress.BZip2Codec
 
 
+
+
+sqoop import --connect jdbc:mysql://cxln2.c.thelab-240901.internal/sqoopex --table msk_employee_table --username sqoopuser --P --target-dir mysql/import/ --as-avrodatafile;
 
 
 --to speed the process only for text file
@@ -54,3 +57,7 @@ sqoop import --connect jdbc:mysql://cxln2.c.thelab-240901.internal/sqoopex --tab
 
 
 sqoop list-tables --connect jdbc:mysql://localhost/data --username root --password ubuntu
+
+
+
+sqoop import -Dmapreduce.job.user.classpath.first=true --connect jdbc:mysql://cxln2.c.thelab-240901.internal/sqoopex --table msk_employee_table --username sqoopuser --P --target-dir test02042021/sqoop/parquetfile1 --as-parquetfile
