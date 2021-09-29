@@ -1,4 +1,5 @@
 import json
+print('test')
 myjsonfile=open('test1.json','r')
 jsondata=myjsonfile.read()
 
