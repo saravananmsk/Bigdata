@@ -1,0 +1,31 @@
+{
+  "type" : "record",
+  "name" : "msk_employee_table",
+  "doc" : "Sqoop import of msk_employee_table",
+  "fields" : [ {
+    "name" : "id",
+    "type" : [ "null", "int" ],
+    "default" : null,
+    "columnName" : "id",
+    "sqlType" : "4"
+  }, {
+    "name" : "name",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "name",
+    "sqlType" : "12"
+  }, {
+    "name" : "occupation",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "occupation",
+    "sqlType" : "12"
+  }, {
+    "name" : "age",
+    "type" : [ "null", "int" ],
+    "default" : null,
+    "columnName" : "age",
+    "sqlType" : "4"
+  } ],
+  "tableName" : "msk_employee_table"
+}

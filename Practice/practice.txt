@@ -1,0 +1,19 @@
+sqoop
+
+import
+
+--connect jdbc:mysql://server/database
+
+--table
+
+--username='sdfmsd'
+
+--password='sksdkfsdk'
+
+--target=''
+
+sqoop import --connect jdbc:mysql://cxln2.c.thelab-240901.internal/sqoopex --table msk_employee_table --username='sqoopuser' --password='NHkkP876rp' --target-dir='msk_employee_table1'
+
+sqoop import --connect jdbc:mysql://cxln2.c.thelab-240901.internal/sqoopex --table msk_employee_table --username='sqoopuser' --password='NHkkP876rp' --target-dir='categories_target' --m 1
+
+sqoop import --connect jdbc:mysql://cxln2.c.thelab-240901.internal/sqoopex --table msk_employee_table --username='sqoopuser' --password='NHkkP876rp' --target-dir='categories_warehouse' --m 1
