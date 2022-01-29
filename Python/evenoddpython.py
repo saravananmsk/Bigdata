@@ -1,4 +1,4 @@
-#Even odd program in  python
+# Even odd program in  python
 a=int(input("please enter the number"));
 if(a%2==0):
       print("Entered number is even")
