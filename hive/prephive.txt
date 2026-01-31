@@ -1,0 +1,4 @@
+# To star hive shell
+run hive  
+# To run hive file in command line
+hive -f createdatabase.hql

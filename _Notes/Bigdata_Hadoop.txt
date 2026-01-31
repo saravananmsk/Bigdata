@@ -1,0 +1,29 @@
+Hadoop
+    HDFS commands
+    Yarn, Hadoop Archictecture 
+Map Reduce
+Hive
+    Run hive to call hive shell
+    hive -f filename.hql -- to run hql file in command line
+Hbase
+Sqoop
+Spark
+    RRD
+    Dataframe
+SparkSQL
+    SQL
+    Dataframe
+Git
+SQL
+Unix shell scripting
+Mysql
+Pig
+Flume
+Ozzie
+Python
+Scala
+Java
+Machine learning with spark
+Graph with Spark
+Streaming with spark
+mysql

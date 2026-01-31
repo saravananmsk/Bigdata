@@ -1,0 +1,10 @@
+Azure Data Engineer
+
+Azure Synapse
+ADF
+ADLS
+Databricks
+Azure Devops
+
+
+portal.Azure.com
