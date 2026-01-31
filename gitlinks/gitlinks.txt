@@ -1,0 +1,18 @@
+top 15 git respositories
+
+
+https://www.hostinger.in/tutorials/most-popular-github-repos
+
+
+https://medium.com/pythoneers/35-most-valuable-github-repositories-for-developers-45ab9df1af81
+
+https://dev.to/ruppysuppy/7-amazing-github-repositories-every-developer-should-follow-in-2023-53i8
+https://levelup.gitconnected.com/10-awesome-github-repos-every-developer-must-know-c0b0839a17d3
+https://analyticsindiamag.com/best-github-learning-repositories-for-developers/
+https://www.geeksforgeeks.org/top-10-useful-github-repos-that-every-developer-should-follow/
+
+
+Data engineering
+
+https://www.theinsaneapp.com/2021/09/best-github-repositories-for-data-science.html
+https://www.analyticsvidhya.com/blog/2022/01/top-10-github-repositories-for-data-science/
